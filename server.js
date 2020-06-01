@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
 
-const dbdata = require('./dbdata.js');
+const dbdata = require('./dbdata.js');  // This file is hidden. See dbdata_template.js for instructions
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');

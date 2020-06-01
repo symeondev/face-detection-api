@@ -1,5 +1,5 @@
 const Clarifai = require('clarifai');
-const apiKey = require('./apiKey');
+const apiKey = require('./apiKey'); // This file is hidden. See apiKey_template.js for instructions
 
 const app = new Clarifai.App(apiKey);
 
