@@ -1,7 +1,8 @@
 const Clarifai = require('clarifai');
-const apiKey = require('./apiKey'); // This file is hidden. See apiKey_template.js for instructions
 
-const app = new Clarifai.App(apiKey);
+const app = new Clarifai.App({
+    apiKey: process.env.CLARIFAI_API_KEY
+});
 
 const handleApiCall = (req, res) => {
     app.models
